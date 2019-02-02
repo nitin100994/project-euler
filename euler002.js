@@ -7,15 +7,13 @@
 //  find the sum of the even-valued terms.
 
 const euler002 = ()=>{
-    let firstnum = 0,secondnum=1,thirdnum=0,sum=0;
-    for(let i=0;i<40;i++){
+    let firstnum = 0,secondnum=1,thirdnum=0,sum=0,limit=4000000;
+    while(sum<limit){
         thirdnum=firstnum+secondnum;
         firstnum = secondnum;
         secondnum = thirdnum;
-        if(thirdnum%2==0)
+        if(thirdnum%2 === 0)
         sum+=thirdnum;
-        if(sum>4000000)
-        break;
     }
     console.log(sum);
 }
