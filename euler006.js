@@ -22,5 +22,4 @@ const squaresOfSum = ()=>{
     let number = 100;
     return Math.pow(((number*(number+1))/2),2);
 }
-
 euler006();
